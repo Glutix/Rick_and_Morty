@@ -1,0 +1,30 @@
+.container {
+    background-color: rgba(240, 240, 3, 0.931);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.image { 
+    width: 500px;
+    height: 100%;
+    border-radius: 50%; 
+    margin: 10px auto 20px auto;
+    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.77);
+}
+
+.parrafo{
+    background: none;
+    margin: 10px 10px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.title {
+    background: none;
+    margin: 5px;
+    font-size: 3rem;
+}
