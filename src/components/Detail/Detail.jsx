@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { API_KEY } from "../../App"
+import { URL_BASE } from "../../App";
 
 const Detail = () => {
 
@@ -11,7 +13,7 @@ const Detail = () => {
 
     //? Peticion
     useEffect(() => {
-        axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => { //* axios me trae un objeto gigante donde guarda la peticion en el propiedad data por eso hacemos destructuring de data
+        axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => { //* axios me trae un objeto gigante donde guarda la peticion en el propiedad data por eso hacemos destructuring de data
             if (data.name) {
                 setCharacter(data);
             } else {

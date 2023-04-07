@@ -1,0 +1,29 @@
+.conteiner {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 160px;
+}
+
+::placeholder{
+    color: rgb(159, 136, 136);
+}
+
+.input{
+    border-radius: 40px;
+    background-color: white;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.button{
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.698);
+    width: 70px;
+    height: 27px;
+    font-size: 15px;
+}

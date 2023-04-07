@@ -3,7 +3,7 @@ import style from "../Cards/Cards.module.css"
 
 const Cards = ({ characters, onClose }) => {
     return (
-        <div>
+        <div className={style.conteiner}>
             {characters.map(({ id, name, status, species, gender, origin, image }) => {
                 return (
                     <Card
@@ -23,8 +23,4 @@ const Cards = ({ characters, onClose }) => {
     );
 }
 
-
-
 export default Cards;
-
-/* Por cada uno de ellos deberás renderizar un componente Card pasándole todas las propiedades que ya mencionamos en el ejercicio anterior */
