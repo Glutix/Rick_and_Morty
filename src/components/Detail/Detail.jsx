@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { API_KEY } from "../../App"
 import { URL_BASE } from "../../App";
+import style from "./Detail.module.css"
 
 const Detail = () => {
 
@@ -27,15 +28,17 @@ const Detail = () => {
         //* Nota: si intento renderizar algo que no existe se rompe todo. por lo tanto hay que comprobar si existe la informacion
         //* Se puede usar varios forma de renderizar un componente de forma condicional
         //* Tenemos las siguientes opciones: operador ternario. o un valor booleano, o condicional chaining
-        <div>
-            <h1>----- Details ----</h1>
-            <h2>Name | {character?.name}</h2>
-            <h2>Status | {character?.status}</h2>
-            <h2>Specie | {character?.specie}</h2>
-            <h2>Gender | {character?.gender}</h2>
-            <h2>Origin | {character?.origin?.name}</h2>
-            <img src={character?.image} alt={character?.name} />
+        <div className={style.conteiner}>
+            <div className={style.detail}>
+                <h1>{character?.name}</h1>
+                <h2>{character?.status}</h2>
+                <h2>{character?.species}</h2>
+                <h2>{character?.gender}</h2>
+                <h2>{character?.origin?.name}</h2>
+            </div>
+            <img className={style.image} src={character?.image} alt={character?.name} />
         </div>
+
     );
 };
 
