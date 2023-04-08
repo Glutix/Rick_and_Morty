@@ -6,6 +6,7 @@ const Card = ({ id, name, status, species, gender, origin, image, onClose }) => 
         <div className={style.card}>
             <button className={style.button} onClick={() => onClose(id)}>X</button>
             <NavLink className={style.cardName} to={`/detail/${id}`}>{name}</NavLink>
+
             <h2 className={style.detalles}>Status: {status}</h2>
             <h2 className={style.detalles}>Species: {species}</h2>
             <h2 className={style.detalles}>Gender: {gender}</h2>

@@ -1,24 +1,29 @@
 .nav {
-    background-color: #e91836;
+    background-color: #e9188b69;
     height: 75px;
     min-width: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #FFF;
-    box-shadow: 5px 0 10px rgb(0, 0, 0, 0.6);
+    border-bottom: 1px solid #ffffff36;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.959);
+    transition: 2s;
+}
+
+.nav:hover{
+    background-color: #e9188b96;
 }
 
 .navlink {
     text-decoration: none;
     color: #f4f4f4;
-    margin: 25px;
-    font-size: 20px;
+    margin: 1.5rem;
+    font-size: 1.5rem;
     
 }
 
 .label {
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #f4f4f4;
-    margin-left: 25px;
+    margin-left: 1.5rem;
 }

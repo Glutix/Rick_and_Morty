@@ -9,7 +9,7 @@ const Nav = ({ onSearch }) => {
             <label className={style.label}>Ricky and Morty</label>
 
 
-            <SearchBar className={style.searchBar} onSearch={onSearch} />
+            <SearchBar onSearch={onSearch} />
 
             <ul className={style.ul}>
                 <NavLink className={style.navlink} to="/home">Home</NavLink>

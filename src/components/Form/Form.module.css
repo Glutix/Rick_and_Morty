@@ -34,7 +34,6 @@
     font-size: 20px;
     border: none;
     margin-top: .5rem;
-
 }
 
 ::placeholder {
@@ -50,26 +49,22 @@
     margin-top: 1.5rem;
 }
 
-
-
 .button {
     margin: 2rem;
     width: 8rem;
     height: 2.5rem;
     border-radius: 2rem;
-    background-color: rgba(236, 22, 133, 0.219);
-    color: rgba(0, 255, 135);
     font-size: 1.2rem;
     box-shadow: 5px 5px 5px black;
     border: 2px rgba(73, 17, 240, 0.694) solid;
     cursor: pointer;
     transition: 2s;
 }
+
 .button:hover {
-    background-color: #ff006fb2;
+    background-color: #e9188b96;
     color: #00ffbb;
 }
-
 
 .errors {
     color: #ffd166;
