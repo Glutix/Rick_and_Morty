@@ -59,6 +59,7 @@
 
 
 .icon {
+    display: flex;
     width: 2.5rem;
     height: 2.3rem;
     margin-bottom: 10px;
@@ -67,6 +68,8 @@
 
 
 .link {
+    display: flex;
+    gap: 1rem;
     font-size: 1.6rem;
     text-decoration: none;
     color: #00ffbb;
@@ -82,7 +85,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 1rem;
     padding: 1rem;
     margin-top: .6rem;
 }
