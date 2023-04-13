@@ -10,6 +10,7 @@ import Nav from './components/Nav/Nav.jsx';
 import About from './components/About/About.jsx';
 import Detail from './components/Detail/Detail.jsx';
 import Form from './components/Form/Form.jsx';
+import Favorites from './components/Favorites/Favorites';
 
 //! Constantes
 export const URL_BASE = "https://be-a-rym.up.railway.app/api/character";
@@ -59,13 +60,14 @@ function App() {
     return (
 
         <div className='App'>
-            {location.pathname !== "/" && <Nav onSearch={onSearch} />}
+            {location.pathname !== "/" && <Nav onSearch={onSearch} setAccess={setAccess} />}
 
             <Routes>
                 <Route path="/" element={<Form login={login} />} />
                 <Route path="/home" element={<Cards characters={characters} onClose={onClose} />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/detail/:id" element={<Detail />} />
+                <Route path="/favorites" element={<Favorites onClose={onClose} />} />
             </Routes>
         </div>
     );

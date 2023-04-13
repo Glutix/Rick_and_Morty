@@ -13,7 +13,7 @@
 .detalles {
     font-size: 1rem;
     margin: .5rem;
-    color: white;
+    color: #f4f4f4;
 }
 
 .cardName {
@@ -27,7 +27,7 @@
     transition: 2s;
 }
 
-.cardName:hover{
+.cardName:hover {
     color: yellow;
 }
 
@@ -38,14 +38,29 @@
     height: 40%;
 }
 
-.button{
-    margin: 0 auto;
-    margin-top: 1rem;
+.button {
+    margin-top: .4rem;
     border-radius: 50%;
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
     width: 2rem;
     height: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
+}
+
+
+.like {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.btnConteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: .5rem;
+    gap: 10rem;
 }
